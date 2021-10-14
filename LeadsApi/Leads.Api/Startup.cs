@@ -43,7 +43,7 @@ namespace Leads.Api
                 .AddFluentValidation(options =>
                 {
                     options.RegisterValidatorsFromAssemblyContaining<Startup>()
-                    .RunDefaultMvcValidationAfterFluentValidationExecutes = false;
+                    .DisableDataAnnotationsValidation = false;
 
                 });
 
