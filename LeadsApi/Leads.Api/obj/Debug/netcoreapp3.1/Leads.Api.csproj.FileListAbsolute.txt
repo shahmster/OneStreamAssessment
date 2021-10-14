@@ -86,3 +86,7 @@ C:\Users\isdev057\Documents\OneStreamAssessment\LeadsApi\Leads.Api\bin\Debug\net
 C:\Users\isdev057\Documents\OneStreamAssessment\LeadsApi\Leads.Api\bin\Debug\netcoreapp3.1\Serilog.Sinks.Console.dll
 C:\Users\isdev057\Documents\OneStreamAssessment\LeadsApi\Leads.Api\bin\Debug\netcoreapp3.1\Serilog.Sinks.Debug.dll
 C:\Users\isdev057\Documents\OneStreamAssessment\LeadsApi\Leads.Api\bin\Debug\netcoreapp3.1\Serilog.Sinks.File.dll
+C:\Users\isdev057\Documents\OneStreamAssessment\LeadsApi\Leads.Api\bin\Debug\netcoreapp3.1\FluentValidation.dll
+C:\Users\isdev057\Documents\OneStreamAssessment\LeadsApi\Leads.Api\bin\Debug\netcoreapp3.1\FluentValidation.AspNetCore.dll
+C:\Users\isdev057\Documents\OneStreamAssessment\LeadsApi\Leads.Api\bin\Debug\netcoreapp3.1\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\isdev057\Documents\OneStreamAssessment\LeadsApi\Leads.Api\obj\Debug\netcoreapp3.1\Leads.Api.MvcApplicationPartsAssemblyInfo.cs

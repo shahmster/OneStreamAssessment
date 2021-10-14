@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "iHN74MCcEkbQSpq5UdCpPN1QXjbt7whnhL4glIgqPEZbm1A/HVw4126GbbStg36v9w7a2/ZC3Y+mosNDMtYiPw==",
+  "dgSpecHash": "H7905/Ts7VheWUz9RgKX0UgJPeHgsSxHALN9bUPlwnWgwJ/cJ0ghNw2frl/dkCVM/RftsK49PVBJd373rOYLfQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\isdev057\\Documents\\OneStreamAssessment\\LeadsApi\\Leads.Api\\Leads.Api.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\isdev057\\.nuget\\packages\\fluentvalidation\\10.3.3\\fluentvalidation.10.3.3.nupkg.sha512",
+    "C:\\Users\\isdev057\\.nuget\\packages\\fluentvalidation.aspnetcore\\10.3.3\\fluentvalidation.aspnetcore.10.3.3.nupkg.sha512",
+    "C:\\Users\\isdev057\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\10.3.3\\fluentvalidation.dependencyinjectionextensions.10.3.3.nupkg.sha512",
     "C:\\Users\\isdev057\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\isdev057\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\isdev057\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",
