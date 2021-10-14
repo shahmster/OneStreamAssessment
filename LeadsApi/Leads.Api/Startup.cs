@@ -1,4 +1,11 @@
+using Leads.Api.Core;
+using Leads.Api.Core.Domain.Services;
+using Leads.Api.Dtos;
+using Leads.Api.Infrastructure.MiddleWare;
+using Leads.Api.Integration.WebServiceMethod;
+using Leads.Api.Integration.WebServiceMethod.Abstractions;
 using Leads.Api.Persistence;
+using LeadsWebService;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -28,15 +35,22 @@ namespace Leads.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            
             services.AddDbContext<LeadsDbContext>(
                  options => options.UseSqlServer("name=ConnectionStrings:DefaultConnection"));
+            services.AddScoped<ILeadsService, LeadService>();
+            services.AddScoped<IWebServiceMethod<DialDetails, string>, WebServiceMethod>();
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
+            services.AddScoped(sop=>new ServiceSoapClient(ServiceSoapClient.EndpointConfiguration.ServiceSoap12));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            app.UseMiddleware<ErrorWrappingMiddleware>();
             if (env.IsDevelopment())
             {
+                
                 app.UseDeveloperExceptionPage();
             }
 

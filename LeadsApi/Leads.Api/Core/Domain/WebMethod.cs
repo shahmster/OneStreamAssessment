@@ -9,7 +9,7 @@ namespace Leads.Api.Core.Domain
             LeadsRequestResponseDetails = new HashSet<LeadsRequestResponseDetail>();
         }
         public int WebMethodId { get; set; }
-        public int Description { get; set; }
+        public string Description { get; set; }
         public virtual ICollection<LeadsRequestResponseDetail> LeadsRequestResponseDetails { get; set; }
     }
 }
