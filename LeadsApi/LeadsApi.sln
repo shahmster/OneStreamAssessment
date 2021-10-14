@@ -3,9 +3,26 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31229.75
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{B50ED9DE-26FC-432C-881F-8007170F43CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Leads.Api", "Leads.Api\Leads.Api.csproj", "{9E6C9493-BE6D-4DAE-98AB-9F47F3EFB484}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9E6C9493-BE6D-4DAE-98AB-9F47F3EFB484}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E6C9493-BE6D-4DAE-98AB-9F47F3EFB484}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E6C9493-BE6D-4DAE-98AB-9F47F3EFB484}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E6C9493-BE6D-4DAE-98AB-9F47F3EFB484}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9E6C9493-BE6D-4DAE-98AB-9F47F3EFB484} = {B50ED9DE-26FC-432C-881F-8007170F43CC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F63CC2DD-0DC4-4599-801C-71362B0A1108}
