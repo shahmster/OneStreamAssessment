@@ -31,11 +31,11 @@ namespace Leads.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            
+            services.AddAutoMapper(typeof(Startup));
             services.AddDbContext<LeadsDbContext>(
                  options => options.UseSqlServer("name=ConnectionStrings:DefaultConnection"));
             services.AddScoped<ILeadsService, LeadService>();
-            services.AddScoped<IWebServiceMethod<DialDetails, string>, WebServiceMethod>();
+            services.AddScoped<IWebServiceMethod<DialDetails, string>, Dial>();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddScoped(sop=>new ServiceSoapClient(ServiceSoapClient.EndpointConfiguration.ServiceSoap12));
 

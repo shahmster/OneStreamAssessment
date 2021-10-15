@@ -17,6 +17,7 @@ namespace Leads.Api.Core.Domain.Services
     public class LeadService : ILeadsService
     {
         private readonly IWebServiceMethod<DialDetails, string> _dial;
+        private readonly IWebServiceMethod<LeadDetails, string> _leadInsert;
         private readonly IUnitOfWork _uow;
 
         public LeadService(
@@ -69,9 +70,9 @@ namespace Leads.Api.Core.Domain.Services
             return result;
 
         }
-        public Task<string> Insert(LeadDetails lead)
+        public async Task<string> Insert(LeadDetails lead)
         {
-            throw new NotImplementedException();
+            return await Call(lead, _leadInsert.ExecuteAsync, WebMethod.Dial);
         }
     }
 }

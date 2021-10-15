@@ -169,3 +169,5 @@ C:\Users\isdev057\Documents\OneStreamAssessment\LeadsApi\Api.Test\bin\Debug\netc
 C:\Users\isdev057\Documents\OneStreamAssessment\LeadsApi\Api.Test\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\isdev057\Documents\OneStreamAssessment\LeadsApi\Api.Test\bin\Debug\netcoreapp3.1\Leads.Api.dll
 C:\Users\isdev057\Documents\OneStreamAssessment\LeadsApi\Api.Test\bin\Debug\netcoreapp3.1\Leads.Api.pdb
+C:\Users\User\Source\Repos\shahmster\OneStreamAssessment\LeadsApi\Api.Test\obj\Debug\netcoreapp3.1\Api.Test.dll
+C:\Users\User\Source\Repos\shahmster\OneStreamAssessment\LeadsApi\Api.Test\obj\Debug\netcoreapp3.1\Api.Test.pdb

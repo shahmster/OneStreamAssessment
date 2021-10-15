@@ -1,4 +1,5 @@
 ﻿using Leads.Api.Infrastructure.ResponseWrapper;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Leads.Api.Controllers.Base
 {
-    public class ApiBaseController
+    public class ApiBaseController: ControllerBase
     {
 
         protected Response<T> Success<T>(string message = null, T Data = null) where T : class => new Response<T>

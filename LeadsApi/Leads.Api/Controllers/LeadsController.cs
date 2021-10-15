@@ -1,4 +1,5 @@
-﻿using Leads.Api.Core.Domain.Services;
+﻿using Leads.Api.Controllers.Base;
+using Leads.Api.Core.Domain.Services;
 using Leads.Api.Dtos;
 using Leads.Api.Integration.WebServiceMethod.Abstractions;
 using Microsoft.AspNetCore.Mvc;
@@ -10,7 +11,7 @@ namespace Leads.Api.Controllers
     
     [ApiController]
     [Route("[controller]")]
-    public class LeadsController : ControllerBase
+    public class LeadsController : ApiBaseController
     {
 
 
@@ -29,6 +30,18 @@ namespace Leads.Api.Controllers
         {
             var response = await _leadsService.Dial(dialDetails);
             
+            return Ok(Success("Succesfully Dialed Lead",new
+            {
+                response
+            }));
+        }
+
+        [Route("Insert")]
+        [HttpPost]
+        public async Task<IActionResult> Insert([FromBody] LeadDetails lead)
+        {
+            var response = await _leadsService.Insert(lead);
+
             return Ok(new
             {
                 response

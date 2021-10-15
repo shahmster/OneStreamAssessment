@@ -5,11 +5,11 @@ using System.Threading.Tasks;
 
 namespace Leads.Api.Integration.WebServiceMethod
 {
-    public class WebServiceMethod : IWebServiceMethod<DialDetails, string>
+    public class Dial : IWebServiceMethod<DialDetails, string>
     {
         private readonly ServiceSoapClient _client;
 
-        public WebServiceMethod(
+        public Dial(
             ServiceSoapClient client)
         {
             this._client = client;

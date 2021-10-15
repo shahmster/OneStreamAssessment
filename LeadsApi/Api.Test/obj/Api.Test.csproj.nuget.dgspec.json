@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\isdev057\\Documents\\OneStreamAssessment\\LeadsApi\\Api.Test\\Api.Test.csproj": {}
+    "C:\\Users\\User\\Source\\Repos\\shahmster\\OneStreamAssessment\\LeadsApi\\Api.Test\\Api.Test.csproj": {}
   },
   "projects": {
-    "C:\\Users\\isdev057\\Documents\\OneStreamAssessment\\LeadsApi\\Api.Test\\Api.Test.csproj": {
+    "C:\\Users\\User\\Source\\Repos\\shahmster\\OneStreamAssessment\\LeadsApi\\Api.Test\\Api.Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\isdev057\\Documents\\OneStreamAssessment\\LeadsApi\\Api.Test\\Api.Test.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Source\\Repos\\shahmster\\OneStreamAssessment\\LeadsApi\\Api.Test\\Api.Test.csproj",
         "projectName": "Api.Test",
-        "projectPath": "C:\\Users\\isdev057\\Documents\\OneStreamAssessment\\LeadsApi\\Api.Test\\Api.Test.csproj",
-        "packagesPath": "C:\\Users\\isdev057\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\isdev057\\Documents\\OneStreamAssessment\\LeadsApi\\Api.Test\\obj\\",
+        "projectPath": "C:\\Users\\User\\Source\\Repos\\shahmster\\OneStreamAssessment\\LeadsApi\\Api.Test\\Api.Test.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Source\\Repos\\shahmster\\OneStreamAssessment\\LeadsApi\\Api.Test\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\isdev057\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -27,15 +27,13 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://traq.pkgs.visualstudio.com/_packaging/TraqCoreRepository/nuget/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\isdev057\\Documents\\OneStreamAssessment\\LeadsApi\\Leads.Api\\Leads.Api.csproj": {
-                "projectPath": "C:\\Users\\isdev057\\Documents\\OneStreamAssessment\\LeadsApi\\Leads.Api\\Leads.Api.csproj"
+              "C:\\Users\\User\\Source\\Repos\\shahmster\\OneStreamAssessment\\LeadsApi\\Leads.Api\\Leads.Api.csproj": {
+                "projectPath": "C:\\Users\\User\\Source\\Repos\\shahmster\\OneStreamAssessment\\LeadsApi\\Leads.Api\\Leads.Api.csproj"
               }
             }
           }
@@ -48,7 +46,6 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
@@ -78,29 +75,32 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.207\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.413\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\isdev057\\Documents\\OneStreamAssessment\\LeadsApi\\Leads.Api\\Leads.Api.csproj": {
+    "C:\\Users\\User\\Source\\Repos\\shahmster\\OneStreamAssessment\\LeadsApi\\Leads.Api\\Leads.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\isdev057\\Documents\\OneStreamAssessment\\LeadsApi\\Leads.Api\\Leads.Api.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Source\\Repos\\shahmster\\OneStreamAssessment\\LeadsApi\\Leads.Api\\Leads.Api.csproj",
         "projectName": "Leads.Api",
-        "projectPath": "C:\\Users\\isdev057\\Documents\\OneStreamAssessment\\LeadsApi\\Leads.Api\\Leads.Api.csproj",
-        "packagesPath": "C:\\Users\\isdev057\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\isdev057\\Documents\\OneStreamAssessment\\LeadsApi\\Leads.Api\\obj\\",
+        "projectPath": "C:\\Users\\User\\Source\\Repos\\shahmster\\OneStreamAssessment\\LeadsApi\\Leads.Api\\Leads.Api.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Source\\Repos\\shahmster\\OneStreamAssessment\\LeadsApi\\Leads.Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\isdev057\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -109,12 +109,10 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://traq.pkgs.visualstudio.com/_packaging/TraqCoreRepository/nuget/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -126,8 +124,15 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[10.1.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.1.1, )"
+            },
             "FluentValidation.AspNetCore": {
               "target": "Package",
               "version": "[10.3.3, )"
@@ -193,7 +198,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.207\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.413\\RuntimeIdentifierGraph.json"
         }
       }
     }
