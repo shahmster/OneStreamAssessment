@@ -6,6 +6,7 @@ using Leads.Api.Infrastructure.Filters;
 using Leads.Api.Infrastructure.MiddleWare;
 using Leads.Api.Integration.WebServiceMethod;
 using Leads.Api.Integration.WebServiceMethod.Abstractions;
+using Leads.Api.Integration.WebServiceMethods;
 using Leads.Api.Persistence;
 using LeadsWebService;
 using Microsoft.AspNetCore.Builder;
@@ -36,6 +37,7 @@ namespace Leads.Api
                  options => options.UseSqlServer("name=ConnectionStrings:DefaultConnection"));
             services.AddScoped<ILeadsService, LeadService>();
             services.AddScoped<IWebServiceMethod<DialDetails, string>, Dial>();
+            services.AddScoped<IWebServiceMethod<LeadDetails[], string>, InsertLead>();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddScoped(sop=>new ServiceSoapClient(ServiceSoapClient.EndpointConfiguration.ServiceSoap12));
 

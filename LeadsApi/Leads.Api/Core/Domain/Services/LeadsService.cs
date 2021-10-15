@@ -1,10 +1,7 @@
 ﻿using Leads.Api.Dtos;
 using Leads.Api.Integration.WebServiceMethod.Abstractions;
-using LeadsWebService;
 using Newtonsoft.Json;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace Leads.Api.Core.Domain.Services
@@ -17,22 +14,22 @@ namespace Leads.Api.Core.Domain.Services
     public class LeadService : ILeadsService
     {
         private readonly IWebServiceMethod<DialDetails, string> _dial;
-        private readonly IWebServiceMethod<LeadDetails, string> _leadInsert;
+        private readonly IWebServiceMethod<LeadDetails[], string> _leadInsert;
         private readonly IUnitOfWork _uow;
 
         public LeadService(
             IWebServiceMethod<DialDetails, string> dial,
+            IWebServiceMethod<LeadDetails[], string> leadInsert,
             IUnitOfWork uow)
         {
             this._dial = dial;
+            _leadInsert = leadInsert;
             this._uow = uow;
         }
         public async Task<string> Dial(DialDetails request)
         {
             return await Call(request, _dial.ExecuteAsync, WebMethod.Dial);
         }
-
-
         private async Task<TResponse> Call<TResponse, TRequest>(TRequest request, Func<TRequest, Task<TResponse>> func, WebMethod webMethod)
         {
             if (request is null)
@@ -70,9 +67,9 @@ namespace Leads.Api.Core.Domain.Services
             return result;
 
         }
-        public async Task<string> Insert(LeadDetails lead)
+        public async Task<string> Insert(LeadDetails[] leads)
         {
-            return await Call(lead, _leadInsert.ExecuteAsync, WebMethod.Dial);
+            return await Call(leads, _leadInsert.ExecuteAsync, WebMethod.Insert);
         }
     }
 }

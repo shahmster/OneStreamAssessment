@@ -1,5 +1,3 @@
-
-using IS.Bank.Cdv.Data.EntityToDbMaps;
 using Leads.Api.Core.Domain;
 using Leads.Api.Persistence.EntityConfigurations;
 using Microsoft.EntityFrameworkCore;

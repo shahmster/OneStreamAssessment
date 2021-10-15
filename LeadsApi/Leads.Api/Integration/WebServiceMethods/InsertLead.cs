@@ -2,9 +2,6 @@
 using Leads.Api.Dtos;
 using Leads.Api.Integration.WebServiceMethod.Abstractions;
 using LeadsWebService;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace Leads.Api.Integration.WebServiceMethods

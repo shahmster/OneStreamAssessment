@@ -2,11 +2,8 @@
 using Leads.Api.Core.Domain;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace IS.Bank.Cdv.Data.EntityToDbMaps
+namespace Leads.Api.Persistence.EntityConfigurations
 {
     public class LogLeadsRequestMap : IEntityTypeConfiguration<LeadsRequestResponseDetail>
     {
